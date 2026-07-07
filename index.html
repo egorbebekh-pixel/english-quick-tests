@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quick Tests</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">English File Pre-intermediate</p>
+          <h1>Quick Tests</h1>
+        </div>
+        <div class="score" aria-live="polite">
+          <span id="scoreText">0 / 50</span>
+          <span id="scoreLabel">проверено</span>
+        </div>
+      </header>
+
+      <section class="controls" aria-label="Выбор теста">
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" type="button" data-test="practice2" role="tab" aria-selected="true">Practice 2</button>
+          <button class="tab" type="button" data-test="practice3" role="tab" aria-selected="false">Practice 3</button>
+          <button class="tab" type="button" data-test="practice4" role="tab" aria-selected="false">Practice 4</button>
+          <button class="tab" type="button" data-test="practice5" role="tab" aria-selected="false">Practice 5</button>
+          <button class="tab" type="button" data-test="basket" role="tab" aria-selected="false">Корзина</button>
+        </div>
+        <div class="actions">
+          <button class="ghost" type="button" id="copyReport">Скопировать отчет</button>
+          <button class="ghost" type="button" id="showAnswers">Показать ответы</button>
+          <button class="ghost" type="button" id="resetTest">Сбросить</button>
+        </div>
+      </section>
+
+      <section class="summary" aria-live="polite">
+        <div class="meter">
+          <span id="meterFill"></span>
+        </div>
+        <div class="summary-text">
+          <strong id="activeTitle">Quick Test 1</strong>
+          <span id="progressText">Ответов: 0 из 50</span>
+        </div>
+      </section>
+
+      <section class="tutor" aria-live="polite">
+        <div class="tutor-head">
+          <div>
+            <h2>Отчет репетитора</h2>
+            <p id="tutorIntro">Начни отвечать, и здесь появятся темы для повторения.</p>
+          </div>
+          <span id="copyStatus"></span>
+        </div>
+        <div id="tutorReport" class="tutor-report"></div>
+        <textarea id="reportText" class="report-text" readonly aria-label="Текст отчета для Codex"></textarea>
+      </section>
+
+      <section id="quiz" class="quiz" aria-label="Тест"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
