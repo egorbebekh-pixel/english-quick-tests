@@ -413,7 +413,7 @@ const tests = {
 };
 
 const state = {
-  activeTest: "practice2",
+  activeTest: "practice4",
   answers: {
     test1: {},
     test2: {},
@@ -451,7 +451,7 @@ const tutorIntro = document.querySelector("#tutorIntro");
 const tutorReport = document.querySelector("#tutorReport");
 const reportText = document.querySelector("#reportText");
 const tabButtons = [...document.querySelectorAll(".tab")];
-const archivedTests = ["test1", "test2", "mistakes"];
+const archivedTests = ["test1", "test2", "mistakes", "practice2", "practice3"];
 
 const recommendations = {
   "Present simple": "Повтори порядок слов в вопросах и отрицаниях: do / does + subject + verb.",
@@ -967,7 +967,7 @@ function loadProgress() {
       state.reveal[testKey] = state.reveal[testKey] || false;
     });
     state.completed = saved.completed || [];
-    if (!tests[state.activeTest]) state.activeTest = "practice2";
+    if (!tests[state.activeTest]) state.activeTest = "practice4";
   } catch {
     localStorage.removeItem(storageKey);
   }
@@ -995,7 +995,7 @@ function stripHtml(value) {
 
 function updateTabs() {
   tabButtons.forEach((button) => {
-    const active = button.dataset.test === state.activeTest;
+    const active = button.dataset.test === state.activeTest || (button.dataset.test === "basket" && archivedTests.includes(state.activeTest));
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-selected", active ? "true" : "false");
   });
