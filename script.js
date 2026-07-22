@@ -515,11 +515,147 @@ const tests = {
         ]
       }
     ]
-  }
+  },
+  practice8: makePracticeTest("Practice 8", [
+    q(1, "I was tired, _____ I went to bed early.", ["because", "so", "but"], "B"),
+    q(2, "We took a taxi _____ we were late.", ["because", "so", "although"], "A"),
+    q(3, "They finished lunch. Ten minutes _____, they left the cafe.", ["later", "after", "then"], "A"),
+    q(4, "What _____ you doing when I called?", ["did", "were", "was"], "B"),
+    q(5, "I _____ my cousins in Spain last summer.", ["visited", "visit", "was visiting"], "A"),
+    q(6, "When we arrived, Mum _____ dinner.", ["made", "was making", "were making"], "B"),
+    q(7, "The hotel was cheap, _____ it was very comfortable.", ["because", "so", "but"], "C"),
+    q(8, "_____ you go sightseeing yesterday?", ["Were", "Did", "Was"], "B"),
+    q(9, "A Who _____ the tickets?\nB My dad did.", ["bought", "did buy", "was buying"], "A"),
+    q(10, "What _____ the beach like?", ["was", "did", "were"], "A")
+  ], [
+    q(11, "We _____ a small apartment near the sea.", ["hired", "spent", "booked"], "A"),
+    q(12, "She _____ a lot of money on souvenirs.", ["booked", "spent", "took"], "B"),
+    q(13, "They usually go _____ in July.", ["abroad", "holiday", "away for"], "A"),
+    q(14, "We're going _____ for a few days next week.", ["away", "abroad for", "holiday"], "A"),
+    q(15, "The view from the hotel was _____.", ["amazing", "foggy", "basic"], "A"),
+    q(16, "I met my best friend _____ university.", ["in", "at", "on"], "B"),
+    q(17, "We were _____ a train when you texted.", ["on", "at", "in"], "A"),
+    q(18, "Can you wait _____ us near the entrance?", ["to", "for", "on"], "B"),
+    q(19, "She _____ me to a new Japanese restaurant.", ["met", "gave", "took"], "C"),
+    q(20, "Please don't run _____ the road.", ["across", "from", "next"], "A")
+  ], [
+    q(21, "Which -ed ending adds /id/?", ["opened", "wanted", "called"], "B"),
+    q(22, "Which -ed ending adds /id/?", ["visited", "played", "laughed"], "A"),
+    q(23, "Which -ed ending adds /id/?", ["worked", "ended", "smiled"], "B"),
+    q(24, "Which -ed ending does NOT add /id/?", ["painted", "arrived", "started"], "B"),
+    q(25, "Which -ed ending does NOT add /id/?", ["needed", "watched", "decided"], "B"),
+    q(26, "Which word has a different vowel sound?", ["thought", "bought", "put"], "C"),
+    q(27, "Which word has a different vowel sound?", ["saw", "could", "took"], "A"),
+    q(28, "Which word has a different -ed sound?", ["loved", "called", "asked"], "C"),
+    q(29, "Which word has a different -ed sound?", ["missed", "enjoyed", "liked"], "B"),
+    q(30, "Which word has a different -ed sound?", ["created", "played", "wanted"], "B")
+  ]),
+  practice9: makePracticeTest("Practice 9", [
+    q(1, "It was raining, _____ we stayed inside.", ["because", "so", "but"], "B"),
+    q(2, "I stayed inside _____ it was raining.", ["because", "so", "although"], "A"),
+    q(3, "We got to the airport. An hour _____, our flight left.", ["then", "later", "after"], "B"),
+    q(4, "Where _____ they staying in London?", ["did", "was", "were"], "C"),
+    q(5, "He _____ a lot of photos on holiday.", ["took", "take", "was taking"], "A"),
+    q(6, "When I saw her, she _____ for the bus.", ["waited", "was waiting", "were waiting"], "B"),
+    q(7, "The room was small, _____ the bed was comfortable.", ["so", "because", "but"], "C"),
+    q(8, "_____ she book the hotel online?", ["Did", "Was", "Were"], "A"),
+    q(9, "A Who _____ you at the station?\nB My uncle did.", ["met", "did meet", "was meeting"], "A"),
+    q(10, "What _____ the journey like?", ["did", "was", "were"], "B")
+  ], [
+    q(11, "We _____ bicycles for the weekend.", ["hired", "booked", "spent"], "A"),
+    q(12, "My parents _____ too much money on flights.", ["had", "spent", "booked"], "B"),
+    q(13, "We didn't go _____ this year. We stayed in our country.", ["holiday", "abroad", "away for"], "B"),
+    q(14, "They often go _____ for the weekend.", ["away", "abroad for", "holiday"], "A"),
+    q(15, "The street was _____. There were people everywhere.", ["noisy", "sunny", "rich"], "A"),
+    q(16, "Are you visiting your family _____ Easter?", ["on", "in", "at"], "C"),
+    q(17, "The keys are _____ the shelf.", ["on", "at", "in"], "A"),
+    q(18, "Please wait _____ me outside.", ["to", "for", "on"], "B"),
+    q(19, "He _____ his girlfriend to the cinema.", ["gave", "met", "took"], "C"),
+    q(20, "I'm _____ a hurry, so I can't stop.", ["in", "with", "to"], "A")
+  ], [
+    q(21, "Which -ed ending adds /id/?", ["called", "started", "opened"], "B"),
+    q(22, "Which -ed ending adds /id/?", ["invented", "loved", "hoped"], "A"),
+    q(23, "Which -ed ending adds /id/?", ["asked", "played", "decided"], "C"),
+    q(24, "Which -ed ending does NOT add /id/?", ["created", "cleaned", "wanted"], "B"),
+    q(25, "Which -ed ending does NOT add /id/?", ["visited", "needed", "worked"], "C"),
+    q(26, "Which word has a different vowel sound?", ["put", "took", "thought"], "C"),
+    q(27, "Which word has a different vowel sound?", ["saw", "bought", "could"], "C"),
+    q(28, "Which word has a different -ed sound?", ["watched", "liked", "called"], "C"),
+    q(29, "Which word has a different -ed sound?", ["played", "missed", "loved"], "B"),
+    q(30, "Which word has a different -ed sound?", ["directed", "showed", "painted"], "B")
+  ]),
+  practice10: makePracticeTest("Practice 10", [
+    q(1, "The museum was closed, _____ we went to the park.", ["because", "so", "but"], "B"),
+    q(2, "We went to the park _____ the museum was closed.", ["so", "because", "although"], "B"),
+    q(3, "She packed her bag. Five minutes _____, the taxi arrived.", ["after", "then", "later"], "C"),
+    q(4, "What _____ he doing at eight o'clock?", ["did", "were", "was"], "C"),
+    q(5, "They _____ home very late last night.", ["came", "come", "were coming"], "A"),
+    q(6, "When the rain started, we _____ on the beach.", ["sat", "were sitting", "was sitting"], "B"),
+    q(7, "The flight was long, _____ I enjoyed it.", ["because", "so", "but"], "C"),
+    q(8, "_____ you spend all your money?", ["Was", "Did", "Were"], "B"),
+    q(9, "A Who _____ dinner?\nB My sister did.", ["made", "did make", "was making"], "A"),
+    q(10, "What _____ your hotel like?", ["was", "did", "were"], "A")
+  ], [
+    q(11, "I _____ our flights yesterday.", ["booked", "hired", "spent"], "A"),
+    q(12, "They _____ a lot of money in the restaurant.", ["spent", "booked", "had"], "A"),
+    q(13, "My family goes _____ every summer.", ["abroad", "holiday", "away for"], "A"),
+    q(14, "Let's go _____ for the weekend.", ["away", "abroad for", "holiday"], "A"),
+    q(15, "The hotel was very _____. It had old furniture and no Wi-Fi.", ["basic", "luxurious", "sunny"], "A"),
+    q(16, "He lives _____ Canada.", ["at", "on", "in"], "C"),
+    q(17, "I was _____ a bus when you called.", ["on", "at", "in"], "A"),
+    q(18, "Can you wait _____ the children?", ["to", "for", "on"], "B"),
+    q(19, "I _____ my parents to the airport.", ["took", "met", "gave"], "A"),
+    q(20, "We walked _____ the road to the hotel.", ["across", "next", "from"], "A")
+  ], [
+    q(21, "Which -ed ending adds /id/?", ["needed", "opened", "played"], "A"),
+    q(22, "Which -ed ending adds /id/?", ["laughed", "wanted", "cleaned"], "B"),
+    q(23, "Which -ed ending adds /id/?", ["invited", "missed", "called"], "A"),
+    q(24, "Which -ed ending does NOT add /id/?", ["started", "hired", "painted"], "B"),
+    q(25, "Which -ed ending does NOT add /id/?", ["invented", "decided", "loved"], "C"),
+    q(26, "Which word has a different vowel sound?", ["bought", "thought", "took"], "C"),
+    q(27, "Which word has a different vowel sound?", ["could", "put", "saw"], "C"),
+    q(28, "Which word has a different -ed sound?", ["asked", "looked", "enjoyed"], "C"),
+    q(29, "Which word has a different -ed sound?", ["called", "played", "watched"], "C"),
+    q(30, "Which word has a different -ed sound?", ["started", "created", "opened"], "C")
+  ]),
+  practice11: makePracticeTest("Practice 11", [
+    q(1, "I missed the train, _____ I arrived late.", ["because", "so", "but"], "B"),
+    q(2, "I arrived late _____ I missed the train.", ["because", "so", "although"], "A"),
+    q(3, "We arrived at the beach. Half an hour _____, it started to rain.", ["later", "after", "then"], "A"),
+    q(4, "What _____ she doing when you arrived?", ["did", "was", "were"], "B"),
+    q(5, "We _____ a car for our holiday.", ["hired", "hire", "were hiring"], "A"),
+    q(6, "When I got home, my brother _____ TV.", ["watched", "was watching", "were watching"], "B"),
+    q(7, "The town was quiet, _____ it was very beautiful.", ["so", "because", "but"], "C"),
+    q(8, "_____ they have a good time?", ["Did", "Were", "Was"], "A"),
+    q(9, "A Who _____ the match?\nB Chelsea did.", ["won", "did win", "was winning"], "A"),
+    q(10, "What _____ the weather like?", ["did", "was", "were"], "B")
+  ], [
+    q(11, "We _____ a room with a balcony.", ["booked", "spent", "hired"], "A"),
+    q(12, "I _____ too much money on clothes.", ["booked", "spent", "took"], "B"),
+    q(13, "They went _____ last year and visited Italy.", ["abroad", "holiday", "away for"], "A"),
+    q(14, "My grandparents are going _____ for two days.", ["away", "abroad for", "holiday"], "A"),
+    q(15, "The weather was _____. We couldn't see the mountains.", ["foggy", "wonderful", "noisy"], "A"),
+    q(16, "We studied French _____ university.", ["at", "on", "in"], "A"),
+    q(17, "Put the books back _____ the shelf.", ["on", "at", "in"], "A"),
+    q(18, "Can you wait _____ me at the station?", ["to", "for", "on"], "B"),
+    q(19, "She _____ her brother to a Mexican restaurant.", ["took", "met", "gave"], "A"),
+    q(20, "Never run _____ the road when cars are coming.", ["across", "from", "next"], "A")
+  ], [
+    q(21, "Which -ed ending adds /id/?", ["worked", "visited", "called"], "B"),
+    q(22, "Which -ed ending adds /id/?", ["created", "played", "missed"], "A"),
+    q(23, "Which -ed ending adds /id/?", ["smiled", "ended", "watched"], "B"),
+    q(24, "Which -ed ending does NOT add /id/?", ["wanted", "opened", "decided"], "B"),
+    q(25, "Which -ed ending does NOT add /id/?", ["painted", "started", "looked"], "C"),
+    q(26, "Which word has a different vowel sound?", ["thought", "put", "took"], "A"),
+    q(27, "Which word has a different vowel sound?", ["saw", "bought", "could"], "C"),
+    q(28, "Which word has a different -ed sound?", ["loved", "asked", "called"], "B"),
+    q(29, "Which word has a different -ed sound?", ["missed", "liked", "played"], "C"),
+    q(30, "Which word has a different -ed sound?", ["invented", "wanted", "showed"], "C")
+  ])
 };
 
 const state = {
-  activeTest: "practice6",
+  activeTest: "practice8",
   answers: {
     test1: {},
     test2: {},
@@ -529,7 +665,11 @@ const state = {
     practice4: {},
     practice5: {},
     practice6: {},
-    practice7: {}
+    practice7: {},
+    practice8: {},
+    practice9: {},
+    practice10: {},
+    practice11: {}
   },
   reveal: {
     test1: false,
@@ -540,7 +680,11 @@ const state = {
     practice4: false,
     practice5: false,
     practice6: false,
-    practice7: false
+    practice7: false,
+    practice8: false,
+    practice9: false,
+    practice10: false,
+    practice11: false
   },
   completed: []
 };
@@ -561,7 +705,7 @@ const tutorIntro = document.querySelector("#tutorIntro");
 const tutorReport = document.querySelector("#tutorReport");
 const reportText = document.querySelector("#reportText");
 const tabButtons = [...document.querySelectorAll(".tab")];
-const archivedTests = ["test1", "test2", "mistakes", "practice2", "practice3", "practice4", "practice5"];
+const archivedTests = ["test1", "test2", "mistakes", "practice2", "practice3", "practice4", "practice5", "practice6", "practice7"];
 
 const recommendations = {
   "Present simple": "Повтори порядок слов в вопросах и отрицаниях: do / does + subject + verb.",
@@ -589,6 +733,17 @@ const recommendations = {
 
 function q(number, prompt, options, answer) {
   return { number, prompt, options, answer };
+}
+
+function makePracticeTest(title, grammar, vocabulary, pronunciation) {
+  return {
+    title,
+    sections: [
+      { title: "Grammar", points: 10, questions: grammar },
+      { title: "Vocabulary", points: 10, questions: vocabulary },
+      { title: "Pronunciation", points: 10, questions: pronunciation }
+    ]
+  };
 }
 
 function stress(word, index) {
@@ -1032,7 +1187,7 @@ function topicFor(testKey, number) {
     if (number >= 27 && number <= 30) return "Pronunciation";
   }
 
-  if (["practice2", "practice3", "practice4", "practice5", "practice6", "practice7"].includes(testKey)) {
+  if (["practice2", "practice3", "practice4", "practice5", "practice6", "practice7", "practice8", "practice9", "practice10", "practice11"].includes(testKey)) {
     if ([1, 2, 3, 7].includes(number)) return "Linkers";
     if ([5, 8, 9, 10].includes(number)) return "Past simple";
     if ([4, 6].includes(number)) return "Past continuous";
@@ -1077,7 +1232,8 @@ function loadProgress() {
       state.reveal[testKey] = state.reveal[testKey] || false;
     });
     state.completed = saved.completed || [];
-    if (!tests[state.activeTest]) state.activeTest = "practice6";
+    if (["practice6", "practice7"].includes(state.activeTest)) state.activeTest = "practice8";
+    if (!tests[state.activeTest]) state.activeTest = "practice8";
   } catch {
     localStorage.removeItem(storageKey);
   }
